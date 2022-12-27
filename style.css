@@ -1,0 +1,279 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-secundaria:#900;
+  --cor-fundo: #fff;
+  --cor-texto: #000;
+
+  --onda: url("./img/onda-clara.svg");
+
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+  .svg-bikcraft {
+      filter: invert(100%) sepia(9%) saturate(3558%) hue-rotate(193deg) brightness(112%) contrast(119%);
+  }
+
+  :root {
+      --cor-primaria: #e21;
+      --cor-secundaria:#900;
+      --cor-fundo: #222;
+      --cor-texto: #fff;
+  
+      --onda: url("./img/onda-escura.svg");
+  }
+
+
+  .menu a {
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+  }
+
+.botao {
+  color: var(--cor-texto)
+
+  }
+
+aside {
+    display: grid;
+    background-image: none;
+
+
+}
+.vantagens-item:hover {
+  border-left: 0.25rem solid var(--cor-texto);
+} 
+
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  background: var(--cor-fundo);
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+  margin-top: 3.75rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.svg-bikcraft {
+
+  margin-bottom: 40px;
+}
+
+
+.menu a {
+  background: var(--cor-fundo);
+  padding: 0.938rem 1.875rem;
+  border-radius:0.25rem;
+  color: var(--cor-texto);
+  text-transform: uppercase;
+
+
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+
+.introducao {
+  background: var(--cor-fundo);
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: end;
+  position:relative;
+  color: var(--cor-texto);
+}
+
+.detalhe {
+  width: 3.75rem;
+  height: 0.25rem;
+  background: var(--cor-primaria);
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+
+.botao {
+  background: var(--cor-primaria);
+  color: var(--cor-fundo);
+  padding: 0.938rem 1.875rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--cor-texto);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+}
+
+.vantagens {
+  background: var(--cor-fundo);
+  padding: 2.5rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  color: var(--cor-texto);
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: var(--cor-fundo);
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  color: var(--cor-texto);
+}
+
+aside {
+  display: grid;
+  background-image: var(--onda);
+
+ 
+}
+li a {
+  border: 0.25rem solid transparent;
+}
+
+.hover1:hover {
+  border: 0.25rem solid var(--cor-primaria);
+
+}
+.botao:hover {
+  background-color: var(--cor-secundaria);
+}
+.vantagens li:nth-child(odd) {
+
+  background-color: var(--cor-fundo);
+
+
+}
+.vantagens-item:hover {
+   border-left: 0.25rem solid var(--cor-primaria);
+
+}
+.introducao h1 {
+  position:relative;
+}
+.introducao h1::after {
+  content: "";
+display:inline-block;
+background: var(--cor-primaria);
+width: 4.5rem;
+height:0.25rem;
+position:absolute;
+z-index: auto;
+top: -25px;
+
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+header { 
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+header img {
+  margin-bottom: 1.25rem;
+}
+.imagem {
+height: 100%;
+object-fit: cover;}
+
+@media (max-width: 800px) {
+  aside {
+    word-break:break-all;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    gap:15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .introducao {
+    text-align: center;
+    justify-items: center;
+}
+.botao {
+  padding: 8px;
+}
+.introducao h1::after {
+  display:none;
+}
+header img {
+  margin-bottom: 30px;
+}
+
+.subtitulo {
+  text-align: center;
+  word-break: keep-all;
+  font-size: 3rem;
+}
+
+}
+
